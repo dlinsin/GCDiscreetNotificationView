@@ -197,6 +197,7 @@ NSString* const GCDiscreetNotificationViewActivityKey = @"activity";
             self.animating = YES;
             [UIView beginAnimations:name context:nil];
             [UIView setAnimationDelegate:self];
+            [UIView setAnimationDuration:0.25];
             [UIView setAnimationBeginsFromCurrentState:YES];
             [UIView setAnimationDidStopSelector:@selector(animationDidStop:finished:context:)];
         }
